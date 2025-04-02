@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.js"></script>
     <script src="js/script.js"></script>
 
     <!-- 몬세라트 폰트 -->
@@ -18,53 +18,59 @@
         rel="stylesheet">
 
     <!-- 프리텐다드 폰트 -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
 
     <!-- 닫기 구글폰트-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
 
 
 </head>
 
 <body>
-    <header>
-        <h1 class="logo">
-            <a href="#"><img src="img/logoB_i.png" alt="logo"></a>
-        </h1>
-        <nav>
-            <ul class="menu">
-                <li><a class="on" href="#">Intro</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Works</a></li>
-                <!-- <li><a href="#">Works : BI</a></li> -->
-                <!-- <li><a href="#">Works : Etc</a></li> -->
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <div id="scroll-top">
 
-        <div class="mail">
-            <img src="img/icon_mail.png" alt="메일 아이콘">
-            <p>subn___@naver.com</p>
-        </div>
-    </header>
-<!--  -->
-    <div class="main">
-        <div class="subinframe">
-            <div class="top-text">
-                <p>2025 Lee Subin Design Portfolio</p>
-                <p>Sub in frame, Subin frame</p>
+        <header>
+            <h1 class="logo">
+                <a href="#"><img src="img/logoB_i.png" alt="logo"></a>
+            </h1>
+            <nav>
+                <ul class="menu">
+                    <li><a class="on" href="#scroll-top">Intro</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <!-- <li><a href="#">Works : BI</a></li> -->
+                    <!-- <li><a href="#">Works : Etc</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="mail">
+                <img src="img/icon_mail.png" alt="메일 아이콘">
+                <p>subn___@naver.com</p>
             </div>
-            <img src="img/maintext.png" alt="메인 그래픽 텍스트">
+        </header>
+        <!--  -->
+        <div class="main">
+            <div class="subinframe">
+                <div class="top-text">
+                    <p>2025 Lee Subin Design Portfolio</p>
+                    <p>Sub in frame, Subin frame</p>
+                </div>
+                <img src="img/maintext.png" alt="메인 그래픽 텍스트">
 
-            <div class="txt">
-                <p>긍정의 경험을 담는 프레임, <br> 프레임이 만들어가는 빛나는 디자인</p>
+                <div class="txt">
+                    <p>긍정의 경험을 담는 프레임, <br> 프레임이 만들어가는 빛나는 디자인</p>
+                </div>
             </div>
         </div>
     </div>
 
+
     <!-- about -->
-    <div class="about">
+    <div id="about">
         <img src="img/about.png" alt="이력서">
     </div>
 
@@ -72,7 +78,7 @@
 
     <div id="index">
         <h1><img src="img/INDEX-text-img.png" alt=""></h1>
-        <ul class="index-menu" >
+        <ul class="index-menu">
             <li><a href="#"><strong>UX / UI</strong> <span>파동 App & Web</span></a></li>
             <li><a href="#"><strong>UX / UI</strong> <span>아마스빈 Renewal</span></a></li>
             <li><a href="#"><strong>BI / Character</strong> <span>타고온</span></a></li>
@@ -81,262 +87,290 @@
         </ul>
     </div>
 
-    <!-- 파동 앱 -->
-    <div class="padong-a">
+    <div id="works">
 
-        <!-- 파동 앱 모달 -->
-        <div class="modal pa-a-modal">
+        <!-- 파동 앱 -->
+        <div id="padong-a">
+
+            <!-- 파동 앱 모달 -->
+            <div class="modal pa-a-modal">
+                <div class="pop">
+                    <img src="img/p-app-detail.png" alt="파동 앱 디테일">
+                </div>
+                <button class="close"><span class="material-symbols-outlined">close</span>close</button>
+            </div>
+
+            <!-- description -->
+            <div class="des">
+                <!-- <h4 class="h4 white">sub_inFrame</h4> -->
+                <div class="number"><img src="img/number-01 (1).png" alt="숫자1(1)"></div>
+                <h2 class="sub-title white">음악취향 공유서비스</h2>
+                <h1 class="main-title white">파동 App</h1>
+
+                <ul class="hash white">
+                    <li>
+                        <p>#UX/UI</p>
+                    </li>
+                    <li>
+                        <p>#App</p>
+                    </li>
+                    <li>
+                        <p>#Brand Identity</p>
+                    </li>
+                </ul>
+
+                <ul class="per white">
+                    <li class="percent">
+                        <b>작업 기여도</b>
+                        <p>100% - 개인 작업</p>
+                    </li>
+                    <li class="period">
+                        <b>작업 기간</b>
+                        <p>2024.12 - 2025.01</p>
+                    </li>
+                </ul>
+
+                <div class="icon">
+                    <p class="white">사용 툴</p>
+                    <ul class="icon-wrap">
+                        <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
+                        <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
+                        <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
+                    </ul>
+                </div>
+
+                <div class="des-txt white">
+                    <p>작업 개요</p>
+                    <p>취향을 함께 공유할 친구가 필요했던 저는 <br> 인공지능을 음악 덕질 친구로 만들었고, <br>
+                        이 아이디어를 발전시켜 ‘파동’을 제작하게 되었습니다.</p>
+                    <p>더 많은 사람이 공감할 수 있도록 플랫폼으로 확장하였고 <br>
+                        누구나 자신만의 방식으로 음악을 즐기고 소통할 수 있는 공간을 만들어갑니다.</p>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn p-a-btn">
+                        기획서 확인하기
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 파동 웹 -->
+
+        <!-- 웹 기획서 모달 -->
+        <div class="modal pa-w-modal">
             <div class="pop">
-                <img src="img/p-app-detail.png" alt="파동 앱 디테일">
+                <img src="img/p-web-detail.png" alt="파동 앱 디테일">
             </div>
             <button class="close"><span class="material-symbols-outlined">close</span>close</button>
         </div>
 
-        <!-- description -->
-        <div class="des">
-            <!-- <h4 class="h4 white">sub_inFrame</h4> -->
-            <div class="number"><img src="img/number-01 (1).png" alt="숫자1(1)"></div>
-            <h2 class="sub-title white">음악취향 공유서비스</h2>
-            <h1 class="main-title white">파동 App</h1>
+        <div id="padong-w">
+            <div class="des">
+                <!-- <h4 class="h4">sub_inFrame</h4> -->
+                <div class="number"><img src="img/number-01 ( 2 ).png" alt="숫자1(2)"></div>
+                <h2 class="sub-title">음악취향 공유서비스</h2>
+                <h1 class="main-title">파동 Web</h1>
 
-            <ul class="hash white">
-                <li><p>#UX/UI</p></li>
-                <li><p>#App</p></li>
-                <li><p>#Brand Identity</p></li>
-            </ul>
-
-            <ul class="per white">
-                <li class="percent">
-                    <b>작업 기여도</b>
-                    <p>100% - 개인 작업</p>
-                </li>
-                <li class="period">
-                    <b>작업 기간</b>
-                    <p>2024.12 - 2025.01</p>
-                </li>
-            </ul>
-
-            <div class="icon">
-                <p class="white">사용 툴</p>
-                <ul class="icon-wrap">
-                    <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
-                    <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
-                    <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
+                <ul class="hash">
+                    <li>
+                        <p>#UX/UI</p>
+                    </li>
+                    <li>
+                        <p>#Web</p>
+                    </li>
+                    <li>
+                        <p>#반응형</p>
+                    </li>
                 </ul>
-            </div>
-                
-            <div class="des-txt white">
-                <p>작업 개요</p>
-                <p>취향을 함께 공유할 친구가 필요했던 저는 <br> 인공지능을 음악 덕질 친구로 만들었고, <br>
-                    이 아이디어를 발전시켜 ‘파동’을 제작하게 되었습니다.</p>
-                <p>더 많은 사람이 공감할 수 있도록 플랫폼으로 확장하였고 <br>
-                누구나 자신만의 방식으로 음악을 즐기고 소통할 수 있는 공간을 만들어갑니다.</p>
-            </div>
 
-            <div class="btn-wrap">
-                <a href="#" class="btn p-a-btn">
-                    기획서 확인하기
-                </a>
-            </div>
-        </div>
-        
-    </div>
-
-    <!-- 파동 웹 -->
-
-    <!-- 웹 기획서 모달 -->
-    <div class="modal pa-w-modal">
-        <div class="pop">
-            <img src="img/p-web-detail.png" alt="파동 앱 디테일">
-        </div>
-        <button class="close"><span class="material-symbols-outlined">close</span>close</button>
-    </div>
-
-    <div class="padong-w">
-        <div class="des">
-            <!-- <h4 class="h4">sub_inFrame</h4> -->
-            <div class="number"><img src="img/number-01 ( 2 ).png" alt="숫자1(2)"></div>
-            <h2 class="sub-title">음악취향 공유서비스</h2>
-            <h1 class="main-title">파동 Web</h1>
-
-            <ul class="hash">
-                <li><p>#UX/UI</p></li>
-                <li><p>#Web</p></li>
-                <li><p>#반응형</p></li>
-            </ul>
-
-            <ul class="per">
-                <li class="percent">
-                    <b>작업 기여도</b>
-                    <p>100% - 개인 작업</p>
-                </li>
-                <li class="period">
-                    <b>작업 기간</b>
-                    <p>2025.02 - 2025.03</p>
-                </li>
-            </ul>
-
-            <div class="icon">
-                <p>사용 툴</p>
-                <ul class="icon-wrap">
-                    <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
-                    <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
-                    <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
-                    <li><img src="img/icon-vs.png" alt="비주얼스튜디오코드 아이콘"></li>
-                    <li><img src="img/icon-html.png" alt="html 아이콘"></li>
-                    <li><img src="img/icon-css.png" alt="css 아이콘"></li>
-                    <li><img src="img/icon-jQurey.png" alt="jQuery 아이콘"></li>
+                <ul class="per">
+                    <li class="percent">
+                        <b>작업 기여도</b>
+                        <p>100% - 개인 작업</p>
+                    </li>
+                    <li class="period">
+                        <b>작업 기간</b>
+                        <p>2025.02 - 2025.03</p>
+                    </li>
                 </ul>
-            </div>
-                
-            <div class="des-txt">
-                <p>작업 개요</p>
-                <p>파동을 홍보하기 위한 기업형 웹사이트 디자인 및 퍼블리싱을 진행했습니다.</p>
-                <p>음악 취향을 중심으로 소통하는 플랫폼인 만큼 리스너를 존중하고 <br>
-                    그들의 음악 감상 문화를 더욱 확장할 수 있도록 기획하였습니다.</p>
+
+                <div class="icon">
+                    <p>사용 툴</p>
+                    <ul class="icon-wrap">
+                        <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
+                        <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
+                        <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
+                        <li><img src="img/icon-vs.png" alt="비주얼스튜디오코드 아이콘"></li>
+                        <li><img src="img/icon-html.png" alt="html 아이콘"></li>
+                        <li><img src="img/icon-css.png" alt="css 아이콘"></li>
+                        <li><img src="img/icon-jQurey.png" alt="jQuery 아이콘"></li>
+                    </ul>
+                </div>
+
+                <div class="des-txt">
+                    <p>작업 개요</p>
+                    <p>파동을 홍보하기 위한 기업형 웹사이트 디자인 및 퍼블리싱을 진행했습니다.</p>
+                    <p>음악 취향을 중심으로 소통하는 플랫폼인 만큼 리스너를 존중하고 <br>
+                        그들의 음악 감상 문화를 더욱 확장할 수 있도록 기획하였습니다.</p>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn p-w-btn">
+                        기획서 확인하기
+                    </a>
+                    <a href="https://01subn.github.io/padong250317/" target="_blank" class="btn">
+                        결과물 홈페이지
+                    </a>
+                </div>
             </div>
 
-            <div class="btn-wrap">
-                <a href="#" class="btn p-w-btn">
-                    기획서 확인하기
-                </a>
-                <a href="https://01subn.github.io/padong0402/" target="_blank" class="btn">
-                    결과물 홈페이지
-                </a>
-            </div>
         </div>
-        
-    </div>
 
-    <!-- 아마스빈 -->
-    <div class="amasvin">
-        <div class="modal ama-modal">
-            <div class="pop">
-                <img src="img/ama-detail.png" alt="아마스빈 디테일">
+        <!-- 아마스빈 -->
+        <div class="amasvin">
+            <div class="modal ama-modal">
+                <div class="pop">
+                    <img src="img/ama-detail.png" alt="아마스빈 디테일">
+                </div>
+                <button class="close"><span class="material-symbols-outlined">close</span>close</button>
             </div>
-            <button class="close"><span class="material-symbols-outlined">close</span>close</button>
-        </div>
 
-        <div class="des">
-            <!-- <h4 class="h4">sub_inFrame</h4> -->
-            <div class="number"><img src="img/number-02.png" alt="숫자2"></div>
-            <h2 class="sub-title">버블티 프랜차이즈</h2>
-            <h1 class="main-title">아마스빈 Redesign</h1>
+            <div class="des">
+                <!-- <h4 class="h4">sub_inFrame</h4> -->
+                <div class="number"><img src="img/number-02.png" alt="숫자2"></div>
+                <h2 class="sub-title">버블티 프랜차이즈</h2>
+                <h1 class="main-title">아마스빈 Redesign</h1>
 
-            <ul class="hash">
-                <li><p>#UX/UI</p></li>
-                <li><p>#Web</p></li>
-                <li><p>#BI</p></li>
-            </ul>
-
-            <ul class="per">
-                <li class="percent">
-                    <b>작업 기여도</b>
-                    <p>100% - 개인작업</p>
-                </li>
-                <li class="period">
-                    <b>작업 기간</b>
-                    <p>2024.10 - 2024.12</p>
-                </li>
-            </ul>
-
-            <div class="icon">
-                <p>사용 툴</p>
-                <ul class="icon-wrap">
-                    <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
-                    <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
-                    <li><img src="img/icon-Ae.png" alt="에펙 아이콘"></li>
-                    <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
-                    <li><img src="img/icon-vs.png" alt="비주얼스튜디오코드 아이콘"></li>
-                    <li><img src="img/icon-html.png" alt="html 아이콘"></li>
-                    <li><img src="img/icon-css.png" alt="css 아이콘"></li>
-                    <li><img src="img/icon-jQurey.png" alt="jQuery 아이콘"></li>
+                <ul class="hash">
+                    <li>
+                        <p>#UX/UI</p>
+                    </li>
+                    <li>
+                        <p>#Web</p>
+                    </li>
+                    <li>
+                        <p>#BI</p>
+                    </li>
                 </ul>
-            </div>
-                
-            <div class="des-txt">
-                <p>작업 개요</p>
-                <p>버블티 프랜차이즈 ‘아마스빈’은 사람들이 더 나은 음료를 <br>
-                    합리적인 가격에 즐기도록 한다는 이념을 가지고 있습니다.</p>
-                <p>아마스빈의 웹사이트를 소비자가 사용하기 위해 들어갔을 때,<br>
-                    사용자의 경험을 위한 부분에서 취약함을 인지하였습니다.</p>
-                <p>본 프로젝트에서 현재 트렌드와 아마스빈 컨셉 이미지 무드에 <br>
-                    맞도록 BI 및 웹사이트 디자인 리뉴얼을 진행 해보았습니다.</p>
-            </div>
 
-            <div class="btn-wrap">
-                <a href="#" class="btn ama-btn">
-                    기획서 확인하기
-                </a>
-                <a href="https://01subn.github.io/amasvin0402/" target="_blank" class="btn">
-                    결과물 홈페이지
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- 타고온 -->
-    <div class="tagoon">
-        <div class="modal ta-modal">
-            <div class="pop">
-                <img src="img/ta-detail.png" alt="파동 앱 디테일">
-            </div>
-            <button class="close"><span class="material-symbols-outlined">close</span>close</button>
-        </div>
-
-        <div class="des">
-            <!-- <h4 class="h4 white">sub_inFrame</h4> -->
-            <div class="number"><img src="img/number-03.png" alt="숫자1(1)"></div>
-            <h2 class="sub-title white">모바일 모빌리티 공유 서비스</h2>
-            <h1 class="main-title white">타고온</h1>
-
-            <ul class="hash white">
-                <li><p>#Character</p></li>
-                <li><p>#Brand</p></li>
-                <li><p>#UX/UI</p></li>
-            </ul>
-
-            <ul class="per white">
-                <li class="percent">
-                    <b>작업 기여도</b>
-                    <p>100% - 개인 작업</p>
-                </li>
-                <li class="period">
-                    <b>작업 기간</b>
-                    <p>2023.03 - 2023.11</p>
-                </li>
-            </ul>
-
-            <div class="icon">
-                <p class="white">사용 툴</p>
-                <ul class="icon-wrap">
-                    <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
-                    <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
-                    <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
-
+                <ul class="per">
+                    <li class="percent">
+                        <b>작업 기여도</b>
+                        <p>100% - 개인작업</p>
+                    </li>
+                    <li class="period">
+                        <b>작업 기간</b>
+                        <p>2024.10 - 2024.12</p>
+                    </li>
                 </ul>
-            </div>
-                
-            <div class="des-txt white">
-                <p>작업 개요</p>
-                <p>모바일 모빌리티 공유 서비스 브랜드를 기획하고, <br>
-                    브랜드의 정체성에 맞는 캐릭터를 디자인하였습니다.</p>
-                <p>본 프로젝트를 기반으로 졸업전시의 개인작 진행하였습니다.</p>
-            </div>
 
-            <div class="btn-wrap">
-                <a href="#" class="btn ta-btn">
-                    기획서 확인하기
-                </a>
-            </div>
+                <div class="icon">
+                    <p>사용 툴</p>
+                    <ul class="icon-wrap">
+                        <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
+                        <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
+                        <li><img src="img/icon-ae.png" alt="에펙 아이콘"></li>
+                        <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
+                        <li><img src="img/icon-vs.png" alt="비주얼스튜디오코드 아이콘"></li>
+                        <li><img src="img/icon-html.png" alt="html 아이콘"></li>
+                        <li><img src="img/icon-css.png" alt="css 아이콘"></li>
+                        <li><img src="img/icon-jQurey.png" alt="jQuery 아이콘"></li>
+                    </ul>
+                </div>
 
+                <div class="des-txt">
+                    <p>작업 개요</p>
+                    <p>버블티 프랜차이즈 ‘아마스빈’은 사람들이 더 나은 음료를 <br>
+                        합리적인 가격에 즐기도록 한다는 이념을 가지고 있습니다.</p>
+                    <p>아마스빈의 웹사이트를 소비자가 사용하기 위해 들어갔을 때,<br>
+                        사용자의 경험을 위한 부분에서 취약함을 인지하였습니다.</p>
+                    <p>본 프로젝트에서 현재 트렌드와 아마스빈 컨셉 이미지 무드에 <br>
+                        맞도록 BI 및 웹사이트 디자인 리뉴얼을 진행 해보았습니다.</p>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn ama-btn">
+                        기획서 확인하기
+                    </a>
+                    <a href="https://01subn.github.io/amasvin250327/" target="_blank" class="btn">
+                        결과물 홈페이지
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- 끝 -->
+
+        <!-- 타고온 -->
+        <div class="tagoon">
+            <div class="modal ta-modal">
+                <div class="pop">
+                    <img src="img/ta-detail.png" alt="파동 앱 디테일">
+                </div>
+                <button class="close"><span class="material-symbols-outlined">close</span>close</button>
+            </div>
+
+            <div class="des">
+                <!-- <h4 class="h4 white">sub_inFrame</h4> -->
+                <div class="number"><img src="img/number-03.png" alt="숫자1(1)"></div>
+                <h2 class="sub-title white">모바일 모빌리티 공유 서비스</h2>
+                <h1 class="main-title white">타고온</h1>
+
+                <ul class="hash white">
+                    <li>
+                        <p>#Character</p>
+                    </li>
+                    <li>
+                        <p>#Brand</p>
+                    </li>
+                    <li>
+                        <p>#UX/UI</p>
+                    </li>
+                </ul>
+
+                <ul class="per white">
+                    <li class="percent">
+                        <b>작업 기여도</b>
+                        <p>100% - 개인 작업</p>
+                    </li>
+                    <li class="period">
+                        <b>작업 기간</b>
+                        <p>2023.03 - 2023.11</p>
+                    </li>
+                </ul>
+
+                <div class="icon">
+                    <p class="white">사용 툴</p>
+                    <ul class="icon-wrap">
+                        <li><img src="img/icon-ps.png" alt="포토샵 아이콘"></li>
+                        <li><img src="img/icon-ai.png" alt="일러스트 아이콘"></li>
+                        <li><img src="img/icon-figma.png" alt="피그마 아이콘"></li>
+
+                    </ul>
+                </div>
+
+                <div class="des-txt white">
+                    <p>작업 개요</p>
+                    <p>모바일 모빌리티 공유 서비스 브랜드를 기획하고, <br>
+                        브랜드의 정체성에 맞는 캐릭터를 디자인하였습니다.</p>
+                    <p>본 프로젝트를 기반으로 졸업전시의 개인작 진행하였습니다.</p>
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" class="btn ta-btn">
+                        기획서 확인하기
+                    </a>
+                </div>
+
+            </div>
+            <!-- 끝 -->
+        </div>
+
 
     </div>
-    
+
     <!-- 컨택트 -->
-    <div class="contact">
+    <div id="contact">
         <h1 class="thank">Thank you <br> for <br> Watching</h1>
         <div class="join_code" onclick="copyCode()">
             <h1 class="c-mail">subn___@naver.com</h1>
