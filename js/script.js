@@ -7,32 +7,44 @@ $(function(){
     function updateSectionClass() {
         const scrollValue = $(window).scrollTop();
         let activeSection = null;
-    
+
+        // 현재 섹션 찾기
         $(".menu li a").each(function () {
             const targetId = $(this).attr("href");
             const targetSection = $(targetId);
-    
+
             if (targetSection.length) {
                 const sectionTop = targetSection.offset().top;
                 const sectionHeight = targetSection.outerHeight();
-    
+
                 if (scrollValue >= sectionTop && scrollValue < sectionTop + sectionHeight) {
                     activeSection = targetId;
                 }
             }
         });
-    
-        // 메뉴의 'on' 클래스 업데이트
+
+        // 메뉴의 'on' 클래스 업데이트 (.menu li a만 적용)
         $(".menu li a").each(function () {
             $(this).toggleClass("on", $(this).attr("href") === activeSection);
         });
     }
 
-    // ✅ 페이지 로드 시 `.se1`이 활성화되도록 실행
+    // ✅ 페이지 로드 시 활성화되도록 실행
     updateSectionClass();
 
     // ✅ 스크롤 시 클래스 업데이트
     $(window).on("scroll", updateSectionClass);
+
+    // 클릭 시 스크롤 이동 (index-menu에는 on 적용 X)
+    $(".menu li a, .index-menu li a").on("click", function (ev) {
+        ev.preventDefault();
+        $("html, body").animate(
+            {
+                scrollTop: $($(this).attr("href")).offset().top,
+            },
+            500
+        );
+    });
 
 
     
@@ -71,6 +83,17 @@ $(function(){
     $('.ta-btn').click(function(ev){
         ev.preventDefault();
         $('.ta-modal').fadeIn(300);
+    })
+
+    // 다단백
+    $('.ddb').click(function(ev){
+        ev.preventDefault();
+        $('.da-modal').fadeIn(300);
+    })
+    // 한화
+    $('.hanhwa').click(function(ev){
+        ev.preventDefault();
+        $('.han-modal').fadeIn(300);
     })
 
     // 닫기버튼 공통
